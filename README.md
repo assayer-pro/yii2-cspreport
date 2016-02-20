@@ -1,7 +1,7 @@
 yii2-cspreport
 ==============
 
-yii2 Module for Content Security Policy Report
+yii2 Module for [Content Security Policy Report](http://content-security-policy.com/)
 
 Installation
 ------------
@@ -49,7 +49,21 @@ Usage
     ],
 ```
 
-* Add header for nginx server config
+* Apache Content-Security-Policy Header
+
+Add the following to your httpd.conf in your VirtualHost or in an .htaccess file:
+
+```
+Header set Content-Security-Policy-Report-Only "default-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; img-src https: data:; font-src https: data:; report-uri /csp-report";
+```
+
+* Nginx Content-Security-Policy Header
+
+In your server {} block add:
+
 ```
    add_header Content-Security-Policy-Report-Only "default-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; img-src https: data:; font-src https: data:; report-uri /csp-report";
 ```
+
+You can also append always to the end to ensure that nginx sends the header reguardless of response code.
+
