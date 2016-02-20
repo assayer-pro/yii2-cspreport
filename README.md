@@ -42,10 +42,28 @@ Usage
 * Add a new rule for `urlManager` of your application's configuration file, for example:
 
 ```php
-    'urlManager' => [
-        'rules' => [
-            'csp-report' => 'csp-report/report/index',
+    'components' => [
+    ...
+        'urlManager' => [
+            'rules' => [
+                'csp-report' => 'csp-report/report/index',
+            ],
         ],
+    ...
+    ],
+```
+
+* Add application/json parser:
+
+```php
+    'components' => [
+    ...
+        'request' => [
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ],
+        ],
+    ...
     ],
 ```
 
