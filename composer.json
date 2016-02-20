@@ -1,0 +1,27 @@
+{
+  "name": "assayer-pro/yii2-cspreport",
+  "description": "Yii2 Module for Content Security Policy Report",
+  "homepage": "https://github.com/assayer-pro/yii-cspreport",
+  "license": "MIT",
+  "type": "yii2-extension",
+  "authors": [
+    {
+        "name": "Assayer Pro",
+        "homepage" : "https://github.com/assayer-pro"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": ">=2.0.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "assayerpro\\cspreport\\": ""
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
