@@ -72,7 +72,7 @@ Usage
 Add the following to your httpd.conf in your VirtualHost or in an .htaccess file:
 
 ```
-Header set Content-Security-Policy-Report-Only "default-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; img-src https: data:; font-src https: data:; report-uri /csp-report";
+Header set Content-Security-Policy-Report-Only "default-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; img-src https: data:; font-src https: data:; report-uri /csp-report;"
 ```
 
 * Nginx Content-Security-Policy Header
