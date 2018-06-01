@@ -53,7 +53,7 @@ Usage
     ],
 ```
 
-* Add application/json parser:
+* Add application/csp-report parser:
 
 ```php
     'components' => [
