@@ -60,7 +60,7 @@ Usage
     ...
         'request' => [
             'parsers' => [
-                'application/json' => 'yii\web\JsonParser',
+                'application/csp-report' => 'yii\web\JsonParser',
             ],
         ],
     ...
